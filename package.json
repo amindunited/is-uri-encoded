@@ -1,0 +1,30 @@
+{
+  "name": "@amindunited/is-uri-encoded",
+  "version": "0.0.1",
+  "description": "Checks if given string has been URI Encoded",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html mocha './src/**/*.test.js' --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amindunited/is-uri-encoded.git"
+  },
+  "keywords": [
+    "String",
+    "URI",
+    "URIEncode",
+    "encoding"
+  ],
+  "author": "Robin Buckley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amindunited/is-uri-encoded/issues"
+  },
+  "homepage": "https://github.com/amindunited/is-uri-encoded#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
