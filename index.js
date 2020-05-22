@@ -6,6 +6,6 @@
  * found in the LICENSE file
  */
 'use strict';
-const toSnakeCase = require('./src');
+const isURIEncoded = require('./src');
 
-module.exports = toSnakeCase;
+module.exports = isURIEncoded;
