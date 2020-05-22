@@ -7,7 +7,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:8.11.1
+    - image: circleci/node:12.16.3
 
 jobs:
   test:
@@ -55,10 +55,13 @@ workflows:
             tags:
               only: /^v.*/
       - deploy:
+          context: AMINDUNITED
           requires:
             - test
           filters:
             tags:
               only: /^v.*/
             branches:
+              only:
+                - master
               ignore: /.*/
